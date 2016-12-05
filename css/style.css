@@ -1,8 +1,16 @@
 body {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
@@ -43,6 +51,7 @@ a {
 	padding: 90px 0;
 	
 	background-color: #55a9c9;
+	background-image: -webkit-linear-gradient(right top, #4188a1, #c3eae8);
 	background-image: linear-gradient(to left bottom, #4188a1, #c3eae8);
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -57,9 +66,15 @@ a {
 }
 
 .main-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	
 	margin: auto;
 	padding: 0 300px;
@@ -76,9 +91,15 @@ a {
 }
 
 .works__item {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-start;
-	align-items: baseline;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: baseline;
+	    -ms-flex-align: baseline;
+	        align-items: baseline;
 }
 
 .works__text {
@@ -92,14 +113,20 @@ a {
 }
 
 .footer-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	
 	width: 100%;
 	margin: 0 auto;
 	margin-top: 90px;
 	padding: 30px 0;
+	
+	background-image: -webkit-repeating-linear-gradient(left, #192431 20px, #4188a1 50px, #192431 75px);
 	
 	background-image: repeating-linear-gradient(to right, #192431 20px, #4188a1 50px, #192431 75px);
 	
@@ -146,8 +173,12 @@ a {
 }
 
 .social-links {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	list-style: none;
 }
 
@@ -166,7 +197,8 @@ a {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
 }
